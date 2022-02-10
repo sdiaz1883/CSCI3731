@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		C02D8DC727AA5C9E007449D4 /* PA_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PA_2.h; sourceTree = "<group>"; };
 		C02D8DC827AA5C9E007449D4 /* PA_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PA_2.c; sourceTree = "<group>"; };
+		C0EF018A27B495F600CD73A1 /* Makefile.mv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.mv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -17,6 +18,7 @@
 			children = (
 				C02D8DC727AA5C9E007449D4 /* PA_2.h */,
 				C02D8DC827AA5C9E007449D4 /* PA_2.c */,
+				C0EF018A27B495F600CD73A1 /* Makefile.mv */,
 			);
 			sourceTree = "<group>";
 		};

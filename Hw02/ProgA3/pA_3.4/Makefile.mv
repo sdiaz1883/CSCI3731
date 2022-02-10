@@ -1,8 +1,7 @@
-//
-//  Makefile.c
-//  pA_3.4
-//
-//  Created by Sammuel Diaz on 2/2/22.
-//
 
-#include "Makefile.h"
+all:main
+
+main.o: pA_3.c pA_3.h
+        g++ -c -Wall -Werror pA_3.c
+main: main.o
+        g++ -o main main.o
