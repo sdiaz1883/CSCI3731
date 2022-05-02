@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Calibri-Bold;\f1\fnil\fcharset0 Calibri;\f2\ftech\fcharset77 Symbol;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f0\b\fs28 \cf2 2.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\fs22 \cf2 Ans
+\f1\b0 \
+A virtual function is a member function which is declared within a base class and is re-defined (overridden) by a derived class. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class\'92s version of the function.\
+When the class is not re-defined by a derived class than we don\'92t need to use virtual function.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f0\b\fs28 \cf2 4.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\fs22 \cf2 Ans:\
+static_cast
+\f1\b0  \uc0\u8722  This is used for the normal/ordinary type conversion. This is also the cast responsible for implicit type coersion and can also be called explicitly. You should use it in cases like converting float to int, char to int, etc.\
+
+\f0\b dynamic_cast
+\f1\b0  \uc0\u8722 This cast is used for handling polymorphism. You only need to use it when you're casting to a derived class. This is exclusively to be used in inheritence when you cast from base class to derived class.\
+WE use static cast in case of conversion. While we use dynamic cast in case of inheritance.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f0\b\fs28 \cf2 6.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\fs22 \cf2 Ans:\
+
+\f1\b0 void eat(Fruit f);\
+\pard\tx360\tx720\pardeftab720\li720\fi-720\sl259\slmult1\sa160\partightenfactor0
+\ls1\ilvl0
+\f2 \cf2 {\listtext	\uc0\u8226 	}
+\f1 In this method parameter is passed as Fruit object and it will receive a copy of object.
+\f0\b \
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f1\b0 \cf2 void eat(Fruit& f);\
+\pard\tx360\tx720\pardeftab720\li720\fi-720\sl259\slmult1\sa160\partightenfactor0
+\ls2\ilvl0
+\f2 \cf2 {\listtext	\uc0\u8226 	}
+\f1 In this method parameter is passed as reference and it will receive a address of object.
+\f0\b \
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\fs28 \cf2 9.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f1\b0\fs22 \cf2 Fixed Code:\
+throw Exception("Help me, Spock");\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f0\b\fs28 \cf2 10.\
+\pard\pardeftab720\sl259\slmult1\sa160\partightenfactor0
+
+\f1\b0\fs22 \cf2 Fixed Code:\
+try \{\
+// some code here that might throw an exception\
+\} catch(Exception& e) \{\
+std::cerr << "Error occurred: "<<e.what()<<std::endl;\
+\}\
+}
